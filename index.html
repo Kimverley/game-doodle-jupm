@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodle Jump</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <img src="doodlejumpbg.png" alt="" id="grid-lines">
+        <img src="platform.png" id="platform" alt="platform">
+        
+        <!-- the start screen -->
+        <div id="startScreen" class="overlay">
+            <h1>Doodle Jump</h1>
+            <p id="instructions">Use Arrow Keys to move left/right</p>
+            <button id="playBtn">Play</button>
+        </div>
+
+        <!-- game over screen -->
+        <div id="gameOverScreen" class="overlay hidden">
+            <h1>game over!</h1>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">play again</button>
+        </div>
+
+        <!-- to show score during gameplay -->
+        <div id="scoreUI">Score: 0</div>
+        <canvas id="gameCanvas"></canvas>  
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
